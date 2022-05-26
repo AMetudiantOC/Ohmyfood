@@ -1,0 +1,238 @@
+// MENUS
+
+@use 'var';
+
+.header {
+  &--withBackArrow {
+    position: relative;
+  }
+  
+  &__arrow {
+    position: absolute;
+    left: 32px;
+    height: 32px;
+    width: 32px;
+    top: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transform: translateY(-50%);
+    font-size: 19.2px;
+    color: black;
+  }
+}
+  
+.heroImg {
+  max-width: 100%;
+  max-height: 512px;
+  width: 100%;
+  object-fit: cover;
+}
+  
+.menu {
+  margin-top: -64px;
+  border-radius: 32px 32px 0 0;
+  background-color: $gray-light;
+  z-index: 1;
+  position: relative;
+  
+  &__header {
+    padding: 16px 25px 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  &__title {
+    font-family: "Shrikhand", "cursive";
+  }
+  
+  &__btn {
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+      
+    &:hover::before {
+      opacity: 1;
+    }
+      
+    &::before {
+      opacity: 0;
+      transition: 0.5s;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background:$gradientPurple;
+    }
+  }
+  
+  &__like {
+    transition-duration: .25s;
+    background-color: $gray-light;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    mix-blend-mode: lighten;
+  }
+  
+  &__btn:hover {
+    .menu__like {
+      &--noBg {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.submenus {
+  display: grid;
+  padding: 0px 16px 0px 16px;
+  
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 4px;
+  }
+}
+
+.submenu {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0px 8px;
+  
+  &__title {
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 8px;
+    font-weight: normal;
+  
+    &::after {
+      content: "";
+      width: 48px;
+      height: 4px;
+      background-color: $color-tertiary;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.menuItem {
+  background-color: white;
+  padding: 16px;
+  display: flex;
+  border-radius: 12px;
+  margin: 16px 0;
+  box-shadow: $shadowLittle;
+  overflow: hidden;
+  cursor: pointer;
+  animation: slideup 1s forwards;
+  opacity: 0;
+  
+  &__header {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+  }
+  
+  &__title {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  &__description {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  &__price {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 8px;
+  }
+  
+  &__confirmation {
+    background-color: $color-tertiary;
+    margin: -16px -80px -16px 16px;
+    width: 64px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition-duration: 0.5s;
+  }
+  
+  &:hover &__confirmation {
+    margin-right: -16px;
+  }
+  
+  &__wrapIcon {
+    height: 25.6px;
+    width: 25.6px;
+    background-color: white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+  }
+  
+  &:hover &__wrapIcon {
+    transform: rotate(0deg);
+    transition-duration: 0.5s;
+  }
+  
+  &__icon {
+    color: $color-tertiary;
+  }
+}
+
+.delay-0 {
+  animation-delay: 3s;
+}
+
+.delay-1 {
+  animation-delay: 3.1s;
+}
+
+.delay-2 {
+  animation-delay: 3.3s;
+}
+
+.delay-3 {
+  animation-delay: 3.4s;
+}
+
+.wrapBtn {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding: 48px 0px;
+}
+  
+.commandBtn {
+  @include button(primary);
+  cursor: pointer;
+}
