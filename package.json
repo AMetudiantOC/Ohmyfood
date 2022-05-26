@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Troisième projet du parcours \\\"Développeur web\\\" chez OpenClassroom. L'objectif d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./src/sass/main.scss:./src/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AMetudiantOC/ohmyfood.git"
+  },
+  "author": "Alexandre Magre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AMetudiantOC/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/AMetudiantOC/ohmyfood#readme"
+}
