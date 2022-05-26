@@ -1,0 +1,23 @@
+// VARIABLES
+
+$fontTwo: "Shrikhand", cursive;
+
+$color-primary: #9356DC;
+$primary-light: #f5edff;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$gray-light: #f6f6f6;
+$gray-heavy: #eaeaea;
+
+$gradientPurple: linear-gradient(
+  170deg,
+  rgba(255, 121, 218, 1) 0%,
+  rgba(147, 86, 220, 1) 100% 
+  );
+
+$appPadding: 16px;
+
+$shadowLittle: rgba(149, 157, 165, 0.2) 4px 4px 4px;
+$shadowLight: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+$shadowHeavy: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;

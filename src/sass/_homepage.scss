@@ -1,0 +1,372 @@
+// HOME
+
+@use 'var';
+
+// Loading spinner //
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(0,0%,100%,.9);
+  z-index: 10000;
+  animation: loader 0.5s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.lds-roller {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+	div {
+		animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+		transform-origin: 40px 40px;
+		&:after {
+			content: " ";
+			display: block;
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			margin: -4px 0 0 -4px;
+		}
+		&:nth-child(1) {
+			animation-delay: -0.036s;
+		}
+		&:nth-child(1):after {
+			background: $color-tertiary;
+			top: 63px;
+			left: 63px;
+		}
+		&:nth-child(2) {
+			animation-delay: -0.072s;
+		}
+		&:nth-child(2):after {
+			background: $color-tertiary;
+			top: 68px;
+			left: 56px;
+		}
+		&:nth-child(3) {
+			animation-delay: -0.108s;
+		}
+		&:nth-child(3):after {
+			background: $color-secondary;
+			top: 71px;
+			left: 48px;
+		}
+		&:nth-child(4) {
+			animation-delay: -0.144s;
+		}
+		&:nth-child(4):after {
+			background: $color-secondary;
+			top: 72px;
+			left: 40px;
+		}
+		&:nth-child(5) {
+			animation-delay: -0.18s;
+		}
+		&:nth-child(5):after {
+			background: $color-secondary;
+			top: 71px;
+			left: 32px;
+		}
+		&:nth-child(6) {
+			animation-delay: -0.216s;
+		}
+		&:nth-child(6):after {
+			background: $color-primary;
+			top: 68px;
+			left: 24px;
+		}
+		&:nth-child(7) {
+			animation-delay: -0.252s;
+		}
+		&:nth-child(7):after {
+			background: $color-primary;
+			top: 63px;
+			left: 17px;
+		}
+		&:nth-child(8) {
+			animation-delay: -0.288s;
+		}
+		&:nth-child(8):after {
+			background: $color-primary;
+			top: 56px;
+			left: 12px;
+		}
+	}
+}
+
+// location //
+
+.location {
+  display: flex;
+  justify-content: center;
+  padding: 20px $appPadding;
+  background-color: $gray-heavy;
+  font-size: 19.2px;
+  position: relative;
+  
+  &__icon {
+    margin-right: 16px;
+  }
+  
+  &__text {
+    font-weight: 700;
+  }
+}
+
+// Discovery //
+
+.discovery {
+  padding: 95px 32px;
+  
+  .sectionTitle {
+    margin-bottom: 32px;
+  }
+}
+
+.discovery_item {
+  background: $gray-light;
+  padding: 32px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .discovery_title {
+    margin: 0;
+    padding: 16px;
+  }
+
+  .dixcovery_text {
+    margin: 24px 0px 24px 0px;
+    font-size: 12px;
+    font-weight: 200;
+  }
+}
+
+@media (min-width: 650px) {
+  .discovery_item {
+    height: 400px;
+    background: none;
+    color: black;
+    position: relative;
+    background: $gray-light;
+  }
+}
+
+// Title responsive //
+
+br{ display: none; }
+
+@media all and (max-width: 1024px) {
+    .break2 { display: inline }
+}
+
+@media all and (max-width: 812px) {
+    br { display: inline }
+}
+
+// Discovery button //
+
+.discovery_button {
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  background: $gradientPurple;
+  width: min-content;
+  white-space: nowrap;
+  border-radius: 30px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  margin: 30px auto;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(1.1);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.50);
+  }
+}
+
+.tuto {
+  padding: ( $appPadding + 16px ) $appPadding;
+  
+  &__title {
+    margin-top: 0;
+  }
+  
+  &__steps {
+     margin: 0;
+    counter-reset: compteListe;
+    align-items: flex-start;
+  
+    @media (min-width:1024px) {
+      display: flex;
+    }
+  }
+  
+  &__step {
+    padding: 24px;
+    margin: 16px 0px 16px 12px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
+    border-radius: 20px;
+    background-color: $gray-light;
+    display: flex;
+    position: relative;
+        
+      &:hover {
+        cursor: pointer;
+        background-color: $primary-light;
+      }
+  
+    @media (min-width:1024px) {
+      flex: 1;
+      margin: 0;
+      margin-left: 32px;
+  
+      &:first-child {
+        margin-left: 12px;
+      }
+    }
+  
+    &:first-child {
+      margin-top: 0;
+    }
+  
+    @media (min-width:1024px) {
+      margin-bottom: 10px;
+
+    &:last-child {
+       margin-bottom: 0;
+    }
+  }
+  
+  &::before {
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    background: $color-primary;
+    height: 24px;
+    width: 24px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    left: -12px;
+    }
+  }
+  
+  &__icon {
+    margin-right: 16px;
+    margin-top: 2px;
+    color: $color-primary;
+  }
+}
+
+.restaurants {
+  background-color: $gray-light;
+  padding: ($appPadding + 16px) $appPadding ($appPadding + 16px) $appPadding ;
+}
+  
+.cards {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0px;
+  margin: 0px 0px 50px 0px;
+  
+  @media (max-width:1024px) {
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+  }
+}
+  
+.card {
+  width: 48%;
+  background-color: white;
+  border-radius: 16px;
+  position: relative;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  box-shadow: $shadowLight;
+        
+  &:hover {
+    cursor: pointer;
+    //transform: scale(1.08);
+    filter: brightness(1.1);
+    box-shadow: $shadowHeavy;
+  }
+
+  @media (max-width:1024px) {
+    width: auto;
+    margin-bottom: 30px;
+  }
+  
+  &__img {
+    height: 192px;
+    width: 100%;
+    border: transparent solid 0px;
+    border-radius: 16px 16px 0 0;
+    box-shadow: none;
+    object-fit: cover;
+  }
+  
+  &__badge {
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 50%);
+    padding: 8px;
+    border-radius: 2px;
+    position: absolute;
+    top: 16px;
+    right: 12px;
+  }
+  
+  &__footer {
+    padding: 16px;
+    position: relative;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    color: black;
+  }
+  
+  &__content {
+    flex: 1;
+  }
+  
+  &__title {
+    margin: 0;
+    margin-bottom: 4px;
+  }
+  
+  &__subtitle {
+    margin: 0;
+  }
+  
+  &__btn {
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    border: transparent 2px solid;
+    padding: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  &__like {
+    background-color: white !important;
+  }
+}
+
+.surlign-text {
+  text-decoration: none;
+}
