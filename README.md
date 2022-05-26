@@ -4,7 +4,7 @@ Third project of the "Web Developer" course at OpenClassroom. The objective is t
 
 You can find the [complete brief here](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DW_P3/Brief%20cre%CC%81atif%20-%20Ohmyfood!.pdf)
 
-![image]()  
+![image](https://github.com/AMetudiantOC/ohmyfood/blob/main/src/images/logo/screenshot.png?raw=true)  
 
 ## Goals
 ---------- 
