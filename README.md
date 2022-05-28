@@ -71,7 +71,7 @@ __Constraints :__
 To test simply & quickly, please visit the online demo: [ohmyfood.alexandremagre.com]()  
   
 Otherwise, clone the project  
-`git clone https://github.com/MathisBarre/MathisBarre_3_04112020.git`  
+`github.com/AMetudiantOC/Ohmyfood.github.io`  
   
 Install dependencies  
 `yarn install`  
