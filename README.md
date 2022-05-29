@@ -7,20 +7,17 @@ You can find the [complete brief here](https://s3-eu-west-1.amazonaws.com/course
 ![image](https://github.com/AMetudiantOC/ohmyfood/blob/main/src/images/logo/screenshot.png?raw=true)  
 
 ## Goals
----------- 
    
 1. Develop a website proposing the menu of 4 great Parisian restaurants.
 2. Allow online booking and menu composition.  
 
 ## Delivery
----------- 
    
 ### __Pages to be integrated according to the models__
 * __Home page__
 * __Menu pages (x4)__  
 
 ## Animation
-----------  
   
 __Buttons__  
 * On hover, the background color of the main buttons should lighten slightly. The drop shadow should also be more visible.  
@@ -34,14 +31,13 @@ __Menu pages__
 * The visitor can add the dishes he wants to his order by clicking on them. A small check mark will appear to the right of the dish. This tick will have to slide from the right to the left. For this first version, the effect can appear on the hover instead of the click. If the title of the dish is too long, it should be trimmed with ellipses. An example of the expected effect is provided.  
 
 ## Technologies
-----------  
   
 __Approved :__ HTML / CSS / Sass  
 __Recommended :__ HTML / Sass  
 __Prohibited :__ Javascript / Frameworks CSS / Inline CSS  
 
 ## Notes
-----------
+
 __Fonts :__  
 * Logo & titles : Shrikhand
 * Text : Roboto
@@ -60,18 +56,15 @@ __Constraints :__
 * Compatibility: Latest versions of Chrome, Firefox & Safari
 
 ## Naming convention commit
-----------  
   
-* [BEM](https://css-tricks.com/bem-101/)
-* [Gitmoji](https://gitmoji.carloscuesta.me/)  
+* [BEM](https://css-tricks.com/bem-101/)  
 
-## Test the project
----------- 
+## Test the project 
   
-To test simply & quickly, please visit the online demo: [ohmyfood.alexandremagre.com]()  
+To test simply & quickly, please visit the online demo: [Check the site](https://ametudiantoc.github.io/Ohmyfood/src/index.html)  
   
 Otherwise, clone the project  
-`github.com/AMetudiantOC/Ohmyfood.github.io`  
+`github.com/AMetudiantOC/Ohmyfood`  
   
 Install dependencies  
 `yarn install`  
@@ -82,11 +75,6 @@ And run the server!
 You can also build the project for production:  
 `yarn build`  
   
-## License
-----------  
+## License 
   
 [OPENCLASSROOMS](https://openclassrooms.com/fr/)
-
-----------
-[Check the site](https://ametudiantoc.github.io/Ohmyfood/src/index.html)
-
