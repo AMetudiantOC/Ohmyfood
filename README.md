@@ -1,4 +1,4 @@
-# __[Ohmyfood](https://github.com/AMetudiantOC/Ohmyfood)__
+# __[Ohmyfood](https://ametudiantoc.github.io/Ohmyfood/)__
 
 Third project of the "Web Developer" course at OpenClassroom. The objective is to integrate and dynamize a web page with CSS animations using the Sass preprocessor
 
@@ -61,7 +61,7 @@ __Constraints :__
 
 ## Test the project 
   
-To test simply & quickly, please visit the online demo: [Check the site](https://ametudiantoc.github.io/Ohmyfood/src/index.html)  
+To test simply & quickly, please visit the online demo: [Check the site](https://ametudiantoc.github.io/Ohmyfood/)  
   
 Otherwise, clone the project  
 `github.com/AMetudiantOC/Ohmyfood`  
