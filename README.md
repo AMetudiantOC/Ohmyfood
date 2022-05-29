@@ -86,3 +86,7 @@ You can also build the project for production:
 ----------  
   
 [OPENCLASSROOMS](https://openclassrooms.com/fr/)
+
+----------
+[Check the site](https://ametudiantoc.github.io/Ohmyfood/src/index.html)
+
